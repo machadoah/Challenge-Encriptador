@@ -68,3 +68,12 @@ U) letra "u" será convertida para "ufat"
         return stringDesencriptada;
 
     }
+
+// botao copiar
+
+function copiar () {
+    let textoEncriptado = stringEncriptada.value;
+    let copia = navigator.clipboard.writeText(textoEncriptado);
+
+    return copia;
+}
